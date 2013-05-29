@@ -49,21 +49,26 @@ table {
 
 
 /* My styles */
-
+.clear{
+	clear:both;
+}
 body{
 	background-image:url(../img/bg_form_page.png);
 	background-color:#fce000;
 	background-repeat:no-repeat;
 	background-position:top center;
-	}
+	min-width: 980px;
+}
 	
 #wrapper{
 	/*background-image:url(../img/white_shape.png);*/
 	background: transparent url(../img/white_shape.png);
 	width:100%;
-	height:585px;
+	/*height:585px;*/
 	margin-top:40px;
-	}
+	padding: 15px 0;
+	min-width: 980px;
+}
 	
 	
 #cont{
@@ -176,8 +181,29 @@ input{
 	
 .fields{
 	margin-bottom:10px;
-	}
-	
+	padding: 4px 3px 4px 0;
+}
+div.field_error{
+	float: right;
+	width: 252px;
+}
+div.field_error.active{
+	background: #e2e0e0;
+	padding: 4px 0;
+}
+div.field_error.active input[type='text'],
+div.field_error.active input[type='email']{
+	border:1px solid #ff0000;
+}
+div.field_error.active span.error{
+	font-size: 12px;
+	font-weight:bold;
+	/*display: block;*/
+	text-indent: 120px;
+	width: 100%;
+	text-align: left;
+	padding: 3px 0 0 0;
+}
 #boton{
 	margin-top:10px;
 	margin-right:25px;
@@ -193,4 +219,7 @@ input{
 	color:#444444;
 	font-weight: normal;
 	font-style: normal;
-	}
+}
+#confirmation_form{
+	display: none;
+}

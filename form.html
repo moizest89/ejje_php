@@ -1,27 +1,5 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Ejje Tour Form</title>
-
-
-<!--CSS-->
-<link href="css/form_styles.css" rel="stylesheet" type="text/css">
-
-<link href="fonts/fonts.css" rel="stylesheet" type="text/css">
-
-</head>
-
-<body>
-
-<!--wrapper-->
-<div id="wrapper">
-
 <!--content-->
 	<div id="cont">
-    
-    
-    <!--left column-->
     <div id="left">
     
         <img src="img/logo_ejjetour.png" class="pad">   
@@ -41,101 +19,97 @@
                </ul>        
             
     </div>
-    <!--end left column-->
- 
- 
- 
-<!--start right column-->   
-    
-<div id="right">
-
-    <h2>
-    PARTICIPE INGRESANDO LOS
-    DATOS A CONTINUACIÓN:
-    </h2>
-
-	 <div class="Form-container">
-    <!--Form Start-->     
-    <form>           
-           
-          <div class="fields"  >
-               <label for="field1" class="wid">
-                    Nombre:
-               </label>
-               <input type="text" name="field1" id="field1" required>
-          </div>
-           
-           
-          <div class="fields" >
-               <label for="field2">
-                    E-mail:
-               </label>
-               <input type="email" name="field2" id="field2" required>
-          </div>
-           
-           
-          <div class="fields"  >
-               <label for="field3">
-                    Cargo:
-               </label>
-               <input type="text" name="field3" id="field3">
-          </div>
-           
-           
-          <div class="fields">
-               <label for="field4">
-                    Empresa:
-               </label>
-               <input type="text" name="field4" id="field4">
-          </div>
-           
- 
-          <h3>Sugiera el EJJE TOUR a tres de sus contactos:</h3> 
-           
-          <div class="fields">
-               <label for="field5">
-                    E-mail 1:
-               </label>
-               <input type="email" name="field5" id="field5">
-          </div>
-           
-           
-          <div class="fields" >
-               <label for="field6">
-                    E-mail 2:
-               </label>
-               <input type="email" name="field6" id="field6">
-          </div>
-           
-           
-          <div class="fields">
-               <label for="field7">
-                    E-mail 3:
-               </label>
-               <input type="email" name="field7" id="field7">
-          </div>
-           
-           
-          <div id="form-submit">
-               <input id="boton" type="submit" value="Enviar">
-          </div>
-     </form>
+    <div id="right">
+        <div class="Form-container"  id="Form-container">
+          <h2>
+          PARTICIPE INGRESANDO LOS
+          DATOS A CONTINUACIÓN:
+          </h2>
+          <form id="new_contact_form">           
+                <div class="fields">
+                     <label for="field1" class="wid">
+                          Nombre:
+                     </label>
+                     <div class="field_error">
+                      <input type="text" name="name_user" id="name_user">
+                      <span class="error" id="name_user"></span>
+                     </div>
+                     <div class="clear"></div>
+                </div>
+                 
+                 
+                <div class="fields">
+                     <label for="field2">
+                          E-mail:
+                     </label>
+                     <div class="field_error">
+                      <input type="text" name="email_user" id="email_user">
+                      <span class="error" id="email_user"></span>
+                     </div>
+                     <div class="clear"></div>
+                </div>
+                 
+                 
+                <div class="fields">
+                     <label for="field3">
+                          Cargo:
+                     </label>
+                     <div class="field_error">
+                      <input type="text" name="appoiment_user" id="appoiment_user">
+                      <span class="error" id="appoiment_user"></span>
+                     </div>
+                     <div class="clear"></div>
+                </div>
+                 
+                 
+                <div class="fields">
+                     <label for="field4">
+                          Empresa:
+                     </label>
+                     <div class="field_error">
+                      <input type="text" name="company_user" id="company_user">
+                      <span class="error" id="company_user"></span>
+                     </div>
+                     <div class="clear"></div>
+                </div>
+                 
+       
+                <h3>Sugiera el EJJE TOUR a tres de sus contactos:</h3> 
+                 
+                <div class="fields">
+                     <label for="field5">
+                          E-mail 1:
+                     </label>
+                     <input type="text" name="email_sugestion1" id="email_sugestion1">
+                </div>
+                 
+                 
+                <div class="fields" >
+                     <label for="field6">
+                          E-mail 2:
+                     </label>
+                     <input type="text" name="email_sugestion2" id="email_sugestion2">
+                </div>
+                 
+                 
+                <div class="fields">
+                     <label for="field7">
+                          E-mail 3:
+                     </label>
+                     <input type="text" name="email_sugestion3" id="email_sugestion3">
+                </div>
+                 
+                 
+                <div id="form-submit">
+                     <input id="create_new_contact" type="submit" value="Enviar">
+                </div>
+           </form>
+        </div>
+        <div class="confirmation_form" id="confirmation_form">
+          <span class="image">
+            CONFIRMACIONNN!!
+          </span>
+        </div>
     </div>
-
-<!--End Start--> 
-
 </div>
-
-<!--End right column-->   
-    
-    
-    
-    </div>
-<!--end cont-->
-
-</div>
-<!-- end wrapper-->
-
-
-</body>
-</html>
+<div class="clear"></div>
