@@ -222,4 +222,12 @@ div.field_error.active span.error{
 }
 #confirmation_form{
 	display: none;
+	height: 441px;
+}
+#confirmation_form span{
+	height: 441px;
+	width: 340px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
 }
