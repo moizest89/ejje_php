@@ -231,3 +231,25 @@ div.field_error.active span.error{
 	vertical-align: middle;
 	text-align: center;
 }
+
+div#contact_container{
+	position: relative;
+	width: 980px;
+	margin: 0 auto;
+}
+div#contact_container h2.title{
+	text-align: left;
+}
+div#contact_container table#show_contacts{
+	width: 100%;
+}
+div#contact_container table#show_contacts tr{
+
+}
+div#contact_container table#show_contacts tr th{
+	border: 1px solid #000;
+	padding: 6px 0;
+}
+div#contact_container table#show_contacts tr td{
+
+}

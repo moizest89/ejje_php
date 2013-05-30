@@ -1,9 +1,5 @@
 $(document).ready(function(){
 	  app.new_contact_form();
-	  $('#create_new_contact').click(function(){
-	  		create_new_contact.view_form($('#create_new_contact'));
-	  		console.log('entro')
-	  })
 });
 
 var app = {
